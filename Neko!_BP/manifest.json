@@ -1,0 +1,23 @@
+{
+    "format_version": 2,
+    "header": {
+      "name": "ネコ!",
+      "description": "ネコ!を追加するアドオン",
+      "version": [1, 0, 0],
+      "uuid": "b34f590b-be48-49c4-a2da-7b52134fe6cf",
+      "min_engine_version": [1, 21, 0]
+    },
+    "modules": [
+      {
+        "type": "data",
+        "description": "メイン",
+        "version": [1, 0, 0],
+        "uuid": "26ae1858-0f24-458c-9fa1-627d2f866998"
+      }
+    ],
+    "metadata": {
+      "generated_with": {
+        "TokaTools-Manifest-Generator": ["1.8.0"]
+      }
+    }
+}
