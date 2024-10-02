@@ -14,7 +14,10 @@ tag @a[tag=neko,scores={time=2400..}] remove neko
 # タグ管理
 execute as @e[name="Neko!"] at @s as @p unless entity @s[tag=neko] run summon minecraft:cat neko_cat
 execute as @e[name="Neko!"] at @s as @p unless entity @s[tag=neko] run summon minecraft:armor_stand neko_spawn
+execute as @e[name="Neko!"] at @s as @p unless entity @s[tag=neko] run title @s title 
+execute as @e[name="Neko!"] at @s as @p unless entity @s[tag=neko] run 
 execute as @e[name="Neko!"] at @s as @p unless entity @s[tag=neko] run tag @s add neko
+kill @e[name="Neko!"]
 execute as @e[name="Neko!"] at @s as @p if entity @s[tag=neko] run kill @e[name=neko_cat,c=1]
 execute as @e[name="Neko!"] at @s as @p if entity @s[tag=neko] run tp @s @e[type=minecraft:armor_stand,name=neko_spawn,c=1]
 execute as @e[name="Neko!"] at @s as @p if entity @s[tag=neko] run kill @e[type=minecraft:armor_stand,name=neko_spawn,c=1]
